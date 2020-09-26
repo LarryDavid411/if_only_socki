@@ -1,0 +1,455 @@
+DALLAS, YEAR 2120
+
+You awake in the morning. You're watch reads 6:86 FM CST.
+
+
+(Hungover)
++ Get out of bed.
+    -> getOutofBedMorning
+
++ Keep sleeping.
+    -> keepSleepingMorning
+
+=== getOutofBedMorning ===
+You crawl out of bed. Checking your watch, you see the temperature outside is 46 deg. No rain today.
+
+Your stomach rumbles just a bit. You got a ping alerting you there's a gig to meet Larry at West End Station to run a Phase R Network model in about 20 minutes.
+
++ Accept Gig.
+    -> acceptGigLarry1
++ Decline Gig.
+    -> declineGigLarry1
+
+=== getOutofBedDream ===
+After what only feels like only a fleeting instant, you open your eyes, check your watch to see it's already 1:22 PM.
+
+You crawl out of bed. Checking your watch, you see the temperature outside is 48 deg. No rain today. "INSERT CRAZY SCREAMING HALLUCINATION HERE!!!
+
+Your stomach rumbles just a bit. You got a ping alerting you there's a gig to meet Larry at West End Station to run a Phase R model in about 20 minutes.
+
++ Accept Gig.
+    -> acceptGigLarry1
++ Delcine Gig.
+    -> declineGigLarry1
+
+===acceptGigLarry1===
+You choose "Accept Gig" and see it's a Black Flag Gig. You haven't seen the Black Flag since '06. 
+The Gig details appear: 
+@ LARRY RIVERA - WEST END TRANSIT CENTER STATION - DOWNTOWN DALLAS.
+@ Gig: 54.4389 PetaVolt/s capacity Phase R Model T: -0:23.
+@ Note: SEPTA 7 Line DE Connection Needed.
+
++ Make a quick breakfast.
+    -> makeBreakfast
++ Skip meal and head into the city.
+    -> skipBreakfast
+
+===declineGigLarry1===
+You press decline and decide instead to just go for a walk.
+
++ Leave Building.
+    -> leaveBuildingNoGig
+
+===makeBreakfast===
+You look through the cabinet and find about 4 oz of GreenSoy left over from the last night. You mix a small spoonful into a cup of water and gulp it down. You remember to flip on the Wall socket generator to run the DonCoin machine while your gone. 
+
++ Leave Building.
+-> leaveBuilding
+
+===skipBreakfast===
+-> leaveBuilding
+
+===leaveBuildingNoGig===
+You leave your building stroll through the neightborhood.
+
+What do you want to do during your walk?
++ Go check out the lake park.
+    -> walkLakePark
++ Keep walking through the streets. 
+    -> walkStreets
+
+===walkLakePark===
+A few blocks away is the central lake park. It's one of the nicer lake parks in the region. It's take about 5 minutes to get there. When you arrive, you see that there's a fishing tounament going on at the pier.
+
++ Walk up to fishing tournament on pier.
+    -> approachFishing
+    
++ Walk around the lake. 
+    -> walkAroundLake
+    
+===walkAroundLake ===
+Finish Finish
+
+[Need to write something here]
+
+-> DONE
+
+===approachFishing===    
+About 10 different people are fishing.  
+ [Need to write something here]
+
+-> DONE  
+===KeepFishing===
+
++ Keep Fishing. 
+    -> KeepFishing
++ Stop Fishing. 
+    -> StopFishing
+
+===StopFishing===
+Finish
+[Need to write something here]
+
+-> DONE
+===walkStreets===
+Finsih
+[Need to write something here]
+
+-> DONE
+==leaveBuilding==
+You throw on your black coat and rummage through your workbench to find your vision goggles and ClusterNet key. You grab your boots and run downstairs. It's still red out. Today is stage 4 car-smog day meaning the sun won't shine for at least another week. It's been over 15 years since the last car was legally sold in Texas but we're still dealing with the scorched sky. 
+
+{ dreamSequence1: When you open your door, you see a medium sized duffel bag by your door. You remember hearing something after you went back to sleep but you thought that was just a dream}
+
+{dreamSequence1:
++ Look inside of the bag.
+    -> openDreamBag
+    
++ Leave and ignore it.
+    -> leaveBuilding1
+    }
+-> leaveBuilding1
+
+=== openDreamBag===
+You open the bag and see find your delivery was made.
+-> leaveBuilding1
+
+=== leaveBuilding1 ===
+You leave the building. The nearest intersection is just a 3 minute walk East. 
+
++ Start walking East
+
+{ makeBreakfast:  }
+
+{ not makeBreakfast: You walk and remember you forgot to check turn on the wall socket generator. You won't have any new DonCoin when you get back.}
+
+-> approachIntersection
+
+=== keepSleepingMorning ===
+You close your eyes and fade into darkness...
+
++ Sleep.
+    -> dreamSequence1
+
+=== dreamSequence1 ===
+A few hours go by and you hear a loud bang outside your apartment door. 
+
++ Stumble out of bed to check out the noise.
+    -> checkDreamNoise
+
++ Roll over and keep sleeping. 
+    -> getOutofBedDream
+
+=== checkDreamNoise ===
+
+You go to the door and get shot.
+-> DONE
+
+=== approachIntersection ===
+As the streetcar rattles across the intersection and approaches the station, you spot an available bike to rent nearby. 
+
+When you ride a train, you generate 10 coins per minute. 
+
+When you ride a bicycle, you generate 100 coins per minute. 
+
+-> plazaStation
+
+=== plazaStation ===
++ Rent Bike.
+    -> rentBike
++ Ride Streetcar.
+    -> rideStreetcar
+
+
+=== rentBike ===
+"You pull out your phone and scan the QR code to unlock the bike with the highest charge. 89% Battery."
+
++ Bike A: 89% charge
+    -> bikeRented
++ Bike B: 30% charge
+    -> bikeRented
++ Bike C: 100% charge
+    -> bikeRented
+
+
+===bikeRented ===
+You select a bike and start riding into town. 
+    
++ Bike to West End Station
+    -> bikeToWestEnd
+    
+===bikeToWestEnd===
+You arive about 15 minutes later on your bike to West End Terminal.
+
+
+After docking your bike, you walk over the to the station's main network terminal to connect to your gig host, Larry.
+
+-> ConnectToWestEnd
+
+=== rideStreetcar ===
+As the train stops at the station, you walk up the the streetcar, push the button on the door and walk on. When you enter, you realize you're the only passenger riding the train.
+
++ Leave train.
+    -> leaveTrain
+
++ Find a seat.
+    -> seatTrain
+
+=== seatTrain === 
+You sit down. The trail pulls out and travels north into the city. You cross the bridge over the Trinity Canal.
+
+and notice that it's flowing over its banks. Normally, you can see the old car roadway that ran alongside the river but with the recent flooding to the west, the river is  {dreamSequence1: "...Back when I lived in Houston, the train neeeaaaaaaaaa ..a...f..d.f........d..."} {dreamSequence1: "I'LL KILL HIM!!!" ...} much higher than ususal.
+
+A couple of stops before you arrive at West End Station, the streetcar approaches Union Station. You had a gig a few weeks ago at Union where you hashed a full 16 PB of data to some small town transit station in Winnemuca, Nevada. 
+
+//For years, the streetcar just ended at Union Station and you'd have to walk half a mile to make a transfer.
+
++ Get Out at Union Station. See what's going on. 
+    -> UnionStation
++ Keep riding into West End Station.
+    -> arriveWestEnd
+
+=== leaveTrain ===
+You leave the train.
+
+As you walk out you look down to the ground and step over a pile of fresh vomit. Lovely.
+
+* Fuck this, I'm going back to bed.
+    -> returnUpstairs
++ Rent Bike instead.
+    -> rentBike
++ I'll just walk.
+    -> walkDowntown
+
+=== walkDowntown ===
+You don't get any coin when you walk which you think is fucked up. Humans were meant to stroll! But whatever, you enjoy it so you don't mind. 
+
+It takes about an hour to get to West End Station in the city from your place in Oak Cliff. 
+
++ Send a delay signal for the gig.
+    -> gigDelayWalk
+    
+=== gigDelayWalk ===
+You run a delay signal to Larry for the Gig which is AutoAccepted.
+
+Crossing the bridge over the Trinity Canal used to be such a pain when people drove on it but after they started to ban cars, there wasn't much use for the interstate to have 12 unused lanes. Quickly afterwards, the city started to allow buildings to be built right in the center of the old roads. 
+
+//When you stroll through the bridge’s neighborhood, you imagine the hundreds of thousands of cars that raced across this same space. Another reason for the car ban was the death and destruction left if their wake. People used to get really hurt and die in those things which is an unimaginable thought. Not only did people drive these things, but cities used to actually be designed around shuttling people		Entire segments of downtown were leveled to for temporary storage of them!
+{dreamSequence1: You notice a few sky scrapers that you never regonized before. One of them looks like a replica of the World Trade Center and is shining two becons strait into the sky. }
+
+Th crosded bridge is always a pretty great place to find some cool networking items. You pass by the DigiNoise Salon. They alsways get updated items and like to check in to see what's new whevnever you can.
+
+Do you want to go in?
+
++ Step into the DigiNoise Salon.
+    -> digiNoise
+
+=== digiNoise ===
+"What can I do for you lad?" says the shopkeep. 
+
+You respond...
+
++ "Got any new stuff since I was here last."
+    -> newStuffDigiNoise
++ "PLACE HOLDER"
+    -> PLACEHOLDER
+    
+===PLACEHOLDER===
+THIS IS A PLACEHOLDER FOR SOMETHING.
+    -> DONE
+=== newStuffDigiNoise===
+{dreamSequence1: }
+[Need to write something here]
+
+-> DONE
+=== UnionStation ===
+Over the last few years, Dallas' Union Station has become a central hub for international travel. You’ll see people from all walks of life in there. You always like to stop by for some good people watching but also can usually scrape up a few coin through providing mobile network bandwidth to the thousands of travelers that come through there.
+
++ Walk inside Union Station.
+    -> walkInUnion
+
+=== walkInUnion ===
+The grand doors open into a vast hall with people speedily walking in all different directions. 
+
+You walk over to the gig hub stand. The raggid clerk is calling out the current transation rates.
+
+"50 keys! .3445 delay shards. Denton Hub Connection!"
+
+You approach and find 2 free plugs available.
+
++ Walk up and plug in ClusterNet Key.
+ -> UnionStationClusterNet
+ 
++ Walk up and ask one of the other users the rates they're getting.
+    -> askUnionStationHub
+
+=== askUnionStationHub ===
+You walk up to one of the users wearing a black suit and holding a black briefcase. 
+"Hey you getting a full rate yeild this morning?" you ask.
+
+"Unfortunatley not. Only getting about .25 today." he responds.
+
++ .25 ain't shit. Leave Union Station.
+    -> leaveUnion
++ Sounds good enough. I've got some time.
+    -> UnionStationClusterNet
+ 
+=== UnionStationClusterNet ===
+{askUnionStationHub: You walk up and plug in ClusterNet Key. }
+
+The diplay reads: INITIALIZING
+........10
+........45
+........70
+........95
+........100
+........Connection Complete
+
+[NEED TO FIND SOMETHING TO PUT HERE]
+
+-> DONE
+
+
+==leaveUnion==
+You find your way out of the crowded Union Station hall and conintue on towards West End Station. Another streetcar approaches as you start to talk down the road.
+
++ Continue walking to WestEnd Station.
+    -> walkFromUnionToWestEnd
++ Hop on the streetcar.
+    -> arriveWestEnd
+
+
+===walkFromUnionToWestEnd===
+You walk down a few more blocak and eventually arive to West End station.
+This station has always been full of characters even before white collar assholes started using the transit. There's old pictures of this station from decades ago, people nodding off every 20 feet. 
+
+You walk over the to the station's main network terminal to connect to your gig host, Larry.
+
+-> ConnectToWestEnd
+
+=== returnUpstairs ===
+You head back to your apartment. When you get in, you take off your boots and head strait to your unmade matress that sits on the floor in the corner of the room.
+
+-> keepSleepingMorning
+
+===arriveWestEnd===
+{leaveUnion: You ride the train just a few more blocks.}
+The streetcar pulls up to West End. This station has always been full of characters even before white collar assholes started using the transit. There's old pictures of this station from decades ago, people nodding off every 20 feet. 
+
+When you get out of the train, you walk over the to the station's main network terminal to connect to your gig host, Larry.
+
+-> ConnectToWestEnd
+
+===ConnectToWestEnd ===
+After connecting, you see he's hosting the link from the PlusCode address Q6J2+9G. That's just a few blocks away.
+
++ Head to Q6J2+9G to find Larry
+ -> goToLarry
+ 
++ Check news feed.
+ -> checkNewsFeed
+
+=== goToLarry ===
+You have a pretty keen sense of direction and know how to get to Q6J2+9G. Just a few blocks into downtown from West End. 
+
+You arrive at the building, a 4 floor walkup, probabluy built some time in the 1960's. 
+
++ Enter Building.
+    -> enterLarryBuilding
+
+===enterLarryBuilding===
+
+As you walk up the stairs, entire families are sleeping all over the place. You pull yourself up to step over them. Your foot lightly smacks a small kid in the head, who doesn't even notice.
+
+When you get to the main door, an Amazon Ring Doorbell alerts you asking,
+
+"Hey there, what do you need?"
+
++ "I'm looking for Larry."
+    -> askForLarry
++ "Nothing, I know where I'm headed."
+    -> skipRingDoor
+
+===askForLarry===
+LED Light Cirlces around....the digital assistant chimes
+
+"I found 1 Larry Rivera in the building. Would you like to call him?"
+
++ "Yes, can you let him know I'm here?'
+    -> ringDoorCallLarry
++ "No, I'll find him myself."
+    -> skipRingDoor
+
+-> END
+===ringDoorCallLarry===
+"Paging Larry, Suite 207."
+
+RING RING....
+
+RING RING...
+
+RING RING...
+
+*CLICK* ACCEPTED *CLICK*
+
+The voice assistant chimed in, "You can go to see Larry now. 2nd door on the right. Have a great day!"
+
+You walk over to Larry's door. Suite 207.
+
++ Knock on Larry's Door.
+    -> knockLarryDoor
+
+===checkNewsFeed ===
+'Mankind is entering a new era of space', says President Flores.
+
+'Texas to complete largest high speed rail network in Winter 2124.' 
+
+{checkNewsFeed2: "I think I've read all of this before."}
+
++ Keep Checking News Feed.
+    -> checkNewsFeed2
+
++ Log off and find Larry.
+    -> goToLarry 
+
+===checkNewsFeed2===
+'Short lived COVID-59 kills several thousand in Utah in 6 hour fight last night'
+
+'President of People's Republic of Canada PRC to address UN after recent exile'
+
++ Keep Checking News Feed.
+    -> checkNewsFeed
+
++ Log off and find Larry.
+    -> goToLarry
+
+===skipRingDoor===
+{askForLarry: "Very well. Thanks and have a nice day." }
+
+You walk down the hallway and see 4 different doors.
+
+You see at the thrid door 'Larry' etched on a plaque. You think to yourself, 'It's probably safe to assume that's the Larry I'm looking for.'
+
++ Knock on Larry's Door.
+    -> knockLarryDoor
+
+===knockLarryDoor===
+Knock Knock ...
+
+{dreamSequence1: The door opens and all you see is a brightly lit white room with a single toaster in the middle of it. }
+
+{dreamSequence1: A few seconds pass and a burnt toast pops up. }
+
+You walk in...
+End of Level 1
+-> END
